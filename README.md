@@ -1,2 +1,5 @@
-# SOCTR
-SOCTR Spatially Ordered CT Transformer for Response Classification
+# Spatially Ordered CT Transformer for Response classification
+
+## Abstract
+
+We evaluated spatially ordered longitudinal computed tomography (CT) for classifying Response Evaluation Criteria in Solid Tumors (RECIST)-defined response in advanced non-small cell lung cancer. This retrospective multicenter study included 547 patients: 415 receiving chemoimmunotherapy (143 training, 62 internal validation, 210 external testing) and 132 receiving chemotherapy alone. DenseNet121 encoded seven ordered tumor sections with baseline, first-assessment, and difference channels; a Transformer aggregated section features. External-test areas under the receiver operating characteristic curve were 0.866 (95% confidence interval 0.819–0.913) for the Transformer and 0.901 (0.860–0.942) for a model combining five prediction scores. Discrimination was lower in the chemotherapy-only cohort. Model-derived groups were associated with overall and progression-free survival in exploratory external-cohort analyses. The models classified response at the same assessment that supplied the follow-up CT input. Added value beyond conventional assessment and effects on treatment decisions or patient outcomes remain untested.
